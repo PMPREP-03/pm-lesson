@@ -129,7 +129,7 @@ console.log(myFirstNumber + mySecondNumber);
 // ez eredményben ugyan az mint a 
 console.log(3 + 8);
 let lastNumber = myFirstNumber + mySecondNumber;
-// it a last number értéke 3 + 9 azaz 11 lesz
+// it a last number értéke 3 + 8 azaz 11 lesz
 ```
 ### Undefined & NaN
 ```js
