@@ -1,0 +1,86 @@
+<script>
+    // ez lefut
+    if (true) {
+        // ez lefut
+    }
+    // ez lefut
+    if (false) {
+        // ez nem lefut
+    }
+    // ez lefut
+</script>
+
+<script>
+    let number = Number(prompt("Adj meg egy számot"));
+    if (isNaN(number)) {
+        console.log("A szám nem szám");
+    }
+    if (number > 10) {
+        console.log("A szám nagyobb mint 10");
+    }
+    if (number < 10) {
+        console.log("A szám kisebb mint 10");
+    }
+    confirm("Elmúltál e 18");
+</script>
+
+<script>
+    {
+        // Kérj be a felhasználótól egy számot
+        // irasd ki hogy pozitív negatív vagy 0 vagy nem szám
+        let number = Number(prompt("Adj meg egy számot"));
+        if (number < 0) {
+            console.log("A szám negatív");
+        }
+        if (number > 0) {
+            console.log("A szám pozitív");
+        }
+        if (number === 0) {
+            console.log("A szám 0");
+        }
+        if (isNaN(number)) {
+            console.log("A szám nem szám");
+        }
+    }
+</script>
+<script>
+    {
+        // Kérj be a felhasználótól egy számot
+        // irasd ki hogy páros vagy páratlan vagy nem szám
+        let number = Number(prompt("Adj meg egy számot"));
+        if (number % 2 == 0) {
+            console.log("Ez egy páros szám");
+        }
+        if (number % 2 != 0) {
+            console.log("Ez egy páratlan szám");
+        }
+        if (number % 2 == 1) {
+            console.log("Ez egy páratlan szám");
+        }
+    }
+
+</script>
+<script>
+    // Kérd be, hogy mennyi pénz van Alice és Bob számláján!
+    // Írj programot, ami modellezi, hogy Alice pénzt küld Bobnak!
+    // Az utalandó összeget a felhasználótól kérd be!
+    // ha van elegendő összeg írodjon át az egyik számláról a másikra
+    // ha nincs akkor írd ki hogy nincs megfelelő fedezet
+    let aliceMoney = Number(prompt("Mennyi pénze van Alice-nak?"));
+    let bobMoney = Number(prompt("Mennyi pénze van Bob-nak?"));
+    let transferMoney = Number(prompt("Mennyit utal Alice Bob-nak?"));
+
+
+
+    if (aliceMoney >= transferMoney) {
+        bobMoney = bobMoney + transferMoney;
+        aliceMoney = aliceMoney - transferMoney;
+        console.log("Alice új egyenleg:", aliceMoney);
+        console.log("Bob új egyenleg:", bobMoney);
+    }
+
+    if (aliceMoney < transferMoney) {
+        console.log("Csóró vagy");
+    }
+
+</script>
