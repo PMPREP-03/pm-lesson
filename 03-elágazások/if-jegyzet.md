@@ -14,6 +14,7 @@ if(false){
 ```js
 let first; // true vagy false
 let second; // true vagy false
+
 // ez mindig lefut
 if(first){
     // ez akkor fut le ha a "first" igaz
@@ -24,9 +25,11 @@ if(first){
     // ez akkor fut le ha a "first" igaz
 }
 // ez mindig lefut
+
 if(first && second){
     // ez akkor fut le ha a "first" és a "second" is igaz
 }
+
 if(first || second){
     // ez akkor fut le ha a "first" vagy a "second" igaz
 }
