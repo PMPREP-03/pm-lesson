@@ -27,4 +27,7 @@ if(first){
 if(first && second){
     // ez akkor fut le ha a "first" és a "second" is igaz
 }
+if(first || second){
+    // ez akkor fut le ha a "first" vagy a "second" igaz
+}
 ```
