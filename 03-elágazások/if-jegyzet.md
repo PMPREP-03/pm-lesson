@@ -8,7 +8,7 @@ if(a){
     // ebben a példában az itt lévő kódok lefutnak
 }
 if(false){
-    // ebben a példában az itt lévő kódok lefutnak
+    // ebben a példában az itt lévő kódok nem futnak le
 }
 ```
 ```js
