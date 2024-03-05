@@ -12,13 +12,14 @@ if(false){
 }
 ```
 ```js
-let first = true;
-let second = false;
+let first = true; // vagy false
+let second = false; // vagy true
 // ez mindig lefut
 if(first){
     // ez akkor fut le ha a "first" igaz
     if(second){
         // ez akkor fut le ha a "first" és a "second" is igaz
+        //  a belső if-be lépésnek a feltétele hogy a külsőbe is belépjen
     }
     // ez akkor fut le ha a "first" igaz
 }
