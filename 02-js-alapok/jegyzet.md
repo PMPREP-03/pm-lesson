@@ -151,7 +151,7 @@ console.log(firstNumber + firstNumber); //az eredmény 58
 ```js
 let firstNumber = prompt("Adj meg egy számot"); //megadjuk az 5-öt
 let secondNumber = prompt("Adj meg egy másik"); //megadjuk az 8-at
-console.log(Number(firstNumber) + Number(firstNumber)); //az eredmény 13
+console.log(Number(firstNumber) + Number(secondNumber)); //az eredmény 13
 ```
 ```js
 let number = "10";
