@@ -43,10 +43,10 @@ true && true; // true
 ```
 `||` logikai `vagy`
 ```js
-true && false; // true
-false && true; // true
-true && true; // true
-false && false; // false
+true || false; // true
+false || true; // true
+true || true; // true
+false || false; // false
 ```
 Ezeket lehet `"kombózni"` is
 ```js
