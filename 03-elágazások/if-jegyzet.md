@@ -12,8 +12,8 @@ if(false){
 }
 ```
 ```js
-let first = true; // vagy false
-let second = false; // vagy true
+let first; // true vagy false
+let second; // true vagy false
 // ez mindig lefut
 if(first){
     // ez akkor fut le ha a "first" igaz
