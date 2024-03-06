@@ -32,6 +32,8 @@ Negáció
 ```js
     1 == 1; // értéke true
     1 != 1; // értéke false
+    1 !== 1; // értéke false
+    let boolean = !(10 > 1); // értéke false
     !true; // értéke false
 ```
 `&&` logikai `és`
