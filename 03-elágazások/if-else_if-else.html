@@ -1,3 +1,96 @@
 <script>
-    
+    let point = 0;
+    if(confirm("Csináltál -e magyar éretségit")){
+        let eretsegi = Number(prompt("Mennyi pontot értél el?"))
+        if(eretsegi < 10){
+            point += 5
+        }else if (eretsegi < 20){
+            point += 10
+        }else if (eretsegi < 30){
+            point += 15
+        }else if (eretsegi < 40){
+            point += 20
+        }else{
+            point += 25
+        }
+    }
+    if(confirm("Csináltál -e matek éretségit")){
+        let eretsegi = Number(prompt("Mennyi pontot értél el?"))
+        if(eretsegi < 10){
+            point += 5
+        }else if (eretsegi < 20){
+            point += 10
+        }else if (eretsegi < 30){
+            point += 15
+        }else if (eretsegi < 40){
+            point += 20
+        }else{
+            point += 25
+        }
+    }
+    if(confirm("Csináltál -e angol éretségit")){
+        let eretsegi = Number(prompt("Mennyi pontot értél el?"))
+        if(eretsegi < 10){
+            point += 5
+        }else if (eretsegi < 20){
+            point += 10
+        }else if (eretsegi < 30){
+            point += 15
+        }else if (eretsegi < 40){
+            point += 20
+        }else{
+            point += 25
+        }
+    }
+    if(confirm("Emelteztél valamelyikből?")){
+        point += 10;
+    }
+    if(confirm("Voltál országos bajnokságon?")){
+        let champion = Number(prompt("Hannyadik lettél?"));
+        if(champion == 1){
+            point += 30;
+        }else if(champion == 2){
+            point += 20;
+        } else if (champion == 3){
+            point += 10;
+        } else{
+            point += 0;
+            console.log("És ezzel vagizol? -.-")
+        }
+    }
+    let eredmenyMagyar = Number(prompt("Hányas lettél magyarból?"));
+    if(eredmenyMagyar == 3){
+        point += 10
+    }else if(eredmenyMagyar == 4){
+        point += 15;
+    }else if(eredmenyMagyar == 5){
+        point += 20;
+    }
+    let eredmenyMatek = Number(prompt("Hányas lettél matekból?"));
+    if(eredmenyMatek == 3){
+        point += 10
+    }else if(eredmenyMatek == 4){
+        point += 15;
+    }else if(eredmenyMatek == 5){
+        point += 20;
+    }
+    let eredmenyAngol = Number(prompt("Hányas lettél angolból?"));
+    if(eredmenyAngol == 3){
+        point += 10
+    }else if(eredmenyAngol == 4){
+        point += 15;
+    }else if(eredmenyAngol == 5){
+        point += 20;
+    }
+    if(confirm("Van nyelvizsgád?")){
+        point += 25;
+    }
+    console.log(point);
+    if(point < 100){
+        console.log("Sajnos nem jutottál be");
+    }else if (point > 99 && point <= 150){
+        console.log("Felvettek a varázsló képzőbe");
+    }else if (point > 150){
+        console.log("Mehetsz amelyikbe akarsz");
+    }
 </script>
