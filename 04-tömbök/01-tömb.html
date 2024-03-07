@@ -1,0 +1,37 @@
+<script>
+let myFirstArray = ["alma","tőtöttkáposzta",2,true];
+let array = new Array();
+
+console.log(myFirstArray);  // értéke: ['alma', 'tőtöttkáposzta', 2, true]
+
+console.log(myFirstArray[1]); // értéke: "tőtöttkáposzta"
+console.log(myFirstArray[8]); // értéke: undefined
+
+
+console.log(myFirstArray.length); // értéke: 4
+
+myFirstArray[myFirstArray.length - 1]; // utolsó elem mindig : hossz - 1 indexen van
+
+myFirstArray[2] = "ananász"; // egy elem értékének megváltozattása
+
+myFirstArray.push(10); // a tömbhöz hozzá add utolsó utáninak egy elemet
+
+console.log(myFirstArray);
+
+myFirstArray.pop() // a tömb utolsó elemét kiszedi
+console.log(myFirstArray);
+
+
+myFirstArray.splice(1,2); // előtte  ['alma', 'tőtöttkáposzta', 'ananász', true] ->['alma', true]
+// az első elemtől számolva kivesz 2 elemet
+
+console.log(myFirstArray);
+
+myFirstArray.splice(1,0,2,true,"kiskocsi"); // előtte ['alma', true] -> ['alma', 2, true, 'kiskocsi', true]
+// a harmadik negyedik és a többi felsorolt elem pedig bekerül a törölt elemek helyére
+// számuk lehet eltérő
+console.log(myFirstArray);
+
+let equalArray = myFirstArray;
+console.log(equalArray == myFirstArray);
+</script>
