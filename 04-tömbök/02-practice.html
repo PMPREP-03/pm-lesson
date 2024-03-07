@@ -1,29 +1,65 @@
 <script>
-    // Hozz létre egy tömböt és irasdki az első elemét
-    let cars = ["audi", "volvo"];
-    console.log(cars[0]); 
+    // // Hozz létre egy tömböt és irasdki az első elemét
+    // let cars = ["audi", "volvo"];
+    // console.log(cars[0]); 
     
-    // Add hozzá azt a Stringet hogy "alma"
-    cars.push("alma");
-    // változtasd meg az utolsó elemét true értékű booleanra
-    cars.splice(2,1,true);
-    cars[cars.length - 1] = true;
+    // // Add hozzá azt a Stringet hogy "alma"
+    // cars.push("alma");
+    // // változtasd meg az utolsó elemét true értékű booleanra
+    // cars.splice(2,1,true);
+    // cars[cars.length - 1] = true;
 
-    cars.pop();
-    cars.push(true);
+    // cars.pop();
+    // cars.push(true);
 
-    // hozz létre egy számokat tartalmazó 5 hosszú tömböt
-    // szorozd össze az első és utolsó elemét és állísd be azt az értéket a 2 es indexre
-    // add össze az összes elemét és írd ki felugró ablakba
+    // // hozz létre egy számokat tartalmazó 5 hosszú tömböt
+    // let valami = [1,2,3,4,5];
+    // // szorozd össze az első és utolsó elemét és állísd be azt az értéket a 2 es indexre
+    // console.log(valami);
+    // let tmp = valami[0] * valami[4];
+    // valami.splice(1,1,tmp);
 
+    // valami[2] = valami[0] * valami[valami.length - 1];
+    // Math.floor(10.45)
+    // valami[Math.floor(valami.length / 2)]
 
- //Írj egy programot, ami három számot bekér egy t tömbbe és kiírja a tömbben tárolt számok átlagát!
+    // // add össze az összes elemét és írd ki felugró ablakba
+    // let sum = valami[0] + valami[1] + valami[2] + valami[3] + valami[4];
+    // alert(sum);
 
+    // //Írj egy programot, ami három számot bekér egy t tömbbe és kiírja a tömbben tárolt számok átlagát!
+    // let number1 = Number(prompt("Pls add the Number"));
+    // let number2 = Number(prompt("Pls add the Number"));
+    // let number3 = Number(prompt("Pls add the Number"));
+
+    // let array = [number1,number2,number3];
+
+    // let avg = (array[0] + array[1] + array[2]) / 3;
+    // console.log(avg);
+
+    // let t = [
+    //     Number(prompt("Pls add the Number")),
+    //     Number(prompt("Pls add the Number")),
+    //     Number(prompt("Pls add the Number"))];
+    
+    // t.push(Number(prompt("Pls add the Number")));
+    // t.push(Number(prompt("Pls add the Number")));
+    // t.push(Number(prompt("Pls add the Number")));
+
+    
   //Írj egy programot,
   // ami három nevet bekér egy t tömbbe és kiírja a tömbben 
   //tárolt nevek vesszővel elválasztott konkatenációját!
+  let name1 = prompt("név");
+  let name2 = prompt("név");
+  let name3 = prompt("név");
 
+  let tömb = [name1 + "," + name2 + "," + name3];
+  console.log(tömb[1])
 
+  let tömb1 = [name1, name2,name3];
+  
+  console.log(tömb[0] + "," + tömb[1] + "," + tömb[2])
       //Egy szendvics változó egy szendvics tartalmát írja le.
     //Kérj be három hozzávalót a szendvicsbe és kérd be a felhasználótól,
     //hogy mire allergiás (egy bekérés, legfeljebb 1 tétel), majd írd ki, hogy elfogyaszthatja-e a szendvicset!
