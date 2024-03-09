@@ -19,7 +19,7 @@
     //     index++;
     // }
 
-    // // feladat írj ciklust ami 10x fut le
+    // // // feladat írj ciklust ami 10x fut le
     // index = 10
     // while(index > 0){
     //     console.log(index);
@@ -45,4 +45,50 @@
     console.log("a tömb elemeinek összege", sum);
 
     // adjuk össze a tömb páratlan elemeit
+    index = 0;
+    sum = 0;
+    while(index < array.length){
+        if(array[index] % 2 != 0){
+            sum += array[index];
+        }
+        index++;
+    }
+    console.log("a tömb páratlan elemeinek összege", sum);
+
+    // addjuk össze a páros elemet a tömbnek
+    index = 0;
+    sum = 0;
+    while(index < array.length){
+        if(array[index] % 2 == 0){
+            sum += array[index];
+        }
+        index++;
+    }
+    console.log("a tömb páros elemeinek összege", sum);
+    
+    // adjuk össze a tömb páros indexen lévő elemeit pl.: [10,20,30,40] -> 10 + 20 -> 30
+    index = 0;
+    sum = 0;
+    while(index < array.length){
+        if(index % 2 == 0){
+            sum += array[index];
+        }
+        index++;
+    }
+    console.log("a tömb páros indexen lévő elemeinek összege", sum);
+
+    // kérj be a felhasználótól egy számot hogy mennyi elemet szeretne a tömbe helyezni
+    // kérj be annyi elemet és helyezd be egy tömbbe
+    let length = Number(prompt("Hány elemű tömböt szeretnél?"));
+    index = 0;
+    array = [];
+    while(index < length){
+        array.push(Number(prompt("Kérlek add meg a számot")));
+        index++;
+    }
+    console.log(array);
+
+
+    // írjuk ki a tömb páros indexen lévő és páratlan indexen lévő elemeinek összegének a különbségét
+    // pl.: [10,20,30,40] -> (10 + 30) - (20 + 40) -> -20
 </script>
