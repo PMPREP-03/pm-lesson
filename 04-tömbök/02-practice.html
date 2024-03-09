@@ -60,7 +60,31 @@
   let tömb1 = [name1, name2,name3];
   
   console.log(tömb[0] + "," + tömb[1] + "," + tömb[2])
-      //Egy szendvics változó egy szendvics tartalmát írja le.
+    //Egy szendvics változó egy szendvics tartalmát írja le.
     //Kérj be három hozzávalót a szendvicsbe és kérd be a felhasználótól,
     //hogy mire allergiás (egy bekérés, legfeljebb 1 tétel), majd írd ki, hogy elfogyaszthatja-e a szendvicset!
+    let sandwich = [];
+    sandwich.push(prompt("Mit kérsz a szendicsbe?"));
+    sandwich.push(prompt("Mit kérsz a szendicsbe?"));
+    sandwich.push(prompt("Mit kérsz a szendicsbe?"));
+    let aregia = prompt("Mire vagy alergiás");
+
+    if(
+      sandwich[0] == aregia ||
+      sandwich[1] == aregia ||
+      sandwich[2] == aregia){
+        alert("Ezt nem eszed meg")
+    }else{
+      alert("jó étvágyat koma")
+    }
+
+    sandwich.includes(aregia); // megvizsgálja hogy benne van e a tömben
+    //pl.: [10,20,30].includes(10) -> true
+    //pl.: [10,20,30].includes(true) -> false
+
+    sandwich.indexOf(aregia);
+    // visszaadja az első előfordulás indexét
+    // pl.: [10,20,30].indexOf(10) -> 0 
+    // pl.: [10,20,30].indexOf(5555) -> -1 
+    // pl.: [1,2,10,10,10,30,10].indexOf(10) -> 2 
 </script>
