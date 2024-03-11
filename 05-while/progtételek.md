@@ -73,3 +73,17 @@
     }
     console.log("A tömb legkisebb eleme", min);
 ```
+```js
+let array = [10, 10, 33, 54, 32];
+// keresük meg a tömb legkisebb elemének indexét
+let minIndex = 0; 
+
+let index = 1;
+while(index < array.length){
+    if(array[minIndex] > array[index]){
+        minIndex = index;
+    }
+    index++;
+}
+console.log("A tömb legkisebb elemének indexe", minIndex);
+```
