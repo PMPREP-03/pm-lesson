@@ -87,3 +87,20 @@ while(index < array.length){
 }
 console.log("A tömb legkisebb elemének indexe", minIndex);
 ```
+# Másolás
+```js
+let array = [10, 10, 33, 54, 32];
+let copyArray = [];
+// az array és a copyArray ugyanazokat ugyanott és ugyanannyi elemet tartalmazon
+// de ne ugyanoda mutassanak a memóriában
+
+let index = 0;
+while(index < array.length){
+    copyArray.push(array[index]);
+    console.log("elem hozáadva");
+    index++;
+}
+
+console.log(array);
+console.log(copyArray);
+```
