@@ -6,13 +6,13 @@
 ### Egy HTML file létrehozásának menete:
 1. Hozz létre egy fájlt (figyelj arra, hogy a kiterjesztése `.html` legyen).
 2. Használd az `html:5` rövidítést a kezdőkódhoz.
-### HTML tag részei:
+### HTML elem részei:
 - Nyitó tag példa: `<p>`
 - Záró tag példa: `</p>`
 - Tartalom példa: `Móka`
 - Attribútumok példa: `style="color: blue;"`
 - Egyben: `<p style="color: blue;">Móka</p>`
-### `tag`-ek
+### `elemek`-ek
   - `<b></b>` felkövér
   - `<a></a>` link
   - `<button></button>` gomb
